@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strings Templetes</title>
+</head>
+<body>
+    <h1>string Templetes</h1>
+    <p id="demo"></p>
+    <script>
+        const str1 = "coatching classes"
+        const nxtstr = "join now"
+        // this template is called string interpolation in witch we can add variables and expression or any JS code into string ,syntax is ${ write JS code into these curly brakite}
+
+        const str = `azher's "sir", ${str1} is  best town ${nxtstr}`;
+         // Template Literals use back-ticks (``) rather than the quotes ("") to define a string:
+        // With template literals, you can use both single and double quotes inside a string:
+        // Template literals allows multiline strings:
+
+        let price = 11;
+        let VAT = 0.33333;
+
+        let Total = `Total ${ price *(1+VAT).toFixed(2)} `;
+        document.getElementById("demo").innerHTML =  str;
+
+        document.getElementById("demo").innerHTML =  Total;
+    </script>
+</body>
+</html>
