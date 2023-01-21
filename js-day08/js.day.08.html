@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object in js</title>
+ </head>
+ <body>
+    <h1> object</h1>
+    <p id="Demo"></p>
+    <script>
+       const person ={
+        firstname: "john",
+        lastname: "Deo",
+        age: "50",
+        eyeColor: "blue",
+        "skin color": "brown",
+        fullname:function(){
+           return this.firstname + " " + this.lastname;
+         },
+    };
+    console.log(person.firstname);
+    console.log(person['skin color']);
+    console.log(person["firstname"]);
+    console.log(person["age"]);
+    console.log(person["lastname"]);
+    const result = person.fullname();
+    document.getElementById("Demo").innerHTML=result;
+    </script>
+ </body>
+ </html>
