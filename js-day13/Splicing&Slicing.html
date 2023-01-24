@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splicing and Slicing mrthod in Arrays</title>
+</head>
+<body>
+    <h1>Splicing and Slicing mrthod in Arrays</h1>
+    <h3>Splice Method</h3>
+    <p>The splice() method can be used to add new items to an array:</p>
+
+     <p id="demo1"></p>
+     <p id="demo2"></p>
+     
+    <script>
+ const Fruits = ["Apple","Mango","Orange","Banana"]
+ document.getElementById("demo1").innerHTML = Fruits;
+
+ Fruits.splice(2,0,"Kiwi","Lemon");
+ document.getElementById("demo2").innerHTML = Fruits;
+//  The first parameter (2) defines the position where new elements should be added (spliced in).
+// The second parameter (0) defines how many elements should be removed.
+// The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added.
+// The splice() method returns an array with the deleted items:
+    </script>
+    <h2>Using splice() to Remove Elements</h2>
+    <p id="Remo1"></p>
+    <p id="Remo2"></p>
+<script>
+     const FRUITS  = ["Apple","Mango","Orange","Banana"]
+     document.getElementById("Remo1").innerHTML = FRUITS;
+     FRUITS.splice(0,2);
+     document.getElementById("Remo2").innerHTML = FRUITS;
+    //  The first parameter (0) defines the position where new elements should be added (spliced in).
+    //  The second parameter (1) defines how many elements should be removed.
+    //  The rest of the parameters are omitted. No new elements will be added.
+</script> 
+</body>
+</html>

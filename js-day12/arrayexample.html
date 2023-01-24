@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+
+<body>
+    <h1>Array</h1>
+    <p id="demo"></p>
+    <script>
+        // Data type 
+        // Numbers,Strings,BigInt,(2020),Null,undefined,Object,
+
+        // Object --- Object , Arrays(Object)
+        //    const car1 = "Renault"
+        //    const car2 = "Volvo"
+        //    const car3 = "Maruti"
+        // const cars = ["Renault", "Volvo" ,"Maruti"]
+        const cars = [
+            {
+                name: "Renault",
+                model: 500,
+            },
+            
+            {
+                name: "Volvo",
+                model: 600,
+
+             },
+             {
+                name: "Maruti",
+                model: 800,
+            }
+         ];
+        document.getElementById("demo").innerHTML = ` car 1 Name: ${cars[0].name} car1 Model: ${cars[0].model}
+       car2 Name: ${cars[1].name} car2 Model: ${cars[1].model} </br> car3 Name: ${cars[2].name} car3 Model: ${cars[2].model} `
+       
+
+
+    </script>
+</body>
+
+</html>
