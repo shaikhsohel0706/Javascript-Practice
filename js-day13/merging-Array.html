@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merging or concatanating in arrarys</title>
+
+</head>
+
+<body>
+    <h1>Merging or concatanating in arrarys</h1>
+    <p id="demo"></p>
+    <script>
+        const MyGirls = ["Aliya", "Anushka", "Kriti"]
+        const MyBoys = ["Varun", "Ranbeer", "Virat"]
+        const MyChildren = MyGirls.concat(MyBoys);
+        // The concat() method creates a new array by merging (concatenating) existing arrays:
+        const Array1 = ["Sohel", "Sameer", "Rehan"]
+        const Array2 = ["Ahmed", "Zishan", "Shazman"]
+        const Array3 = ["Pathri", "Parbhani", "Beed"]
+        const AllArays = Array1.concat(Array2, Array3).concat("SHAIKH");
+        // The concat() method can take any number of array arguments:
+        // The concat() method can also take strings as arguments:
+ document.getElementById("demo").innerHTML = MyChildren + " <br><br> " + AllArays;
+
+    </script>
+</body>
+
+</html>

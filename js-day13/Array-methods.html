@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods</title>
+</head>
+
+<body>
+    <h1>Array pop and push methods</h1>
+    <p id="demo"></p>
+    <h2>Shift and Unshift method</h2>
+    <p id="Remo"></p>
+    <script>
+        const furits = ["Banana", "Apple", "Orange", "Mango"]
+        furits.pop();
+        // The pop() method removes the last element from an array:
+
+
+        furits.push("dragon fruit");
+        // The push() method adds a new element to an array (at the end)
+        furits.pop();
+        document.getElementById("demo").innerHTML = furits.join("/")
+        // When you work with arrays, it is easy to remove elements and add new elements.
+        // This is what popping and pushing is:
+        // Popping items out of an array, or pushing items into an array.
+        // this push and pop mechanism based on stack opration means LIFO(last in first out )
+
+        const cars = ["vovlo", "audi", "maruti", "Creta"]
+        cars.shift();
+        //    The shift() method removes the first array element and "shifts" all other elements to a lower index.
+        cars.unshift("swift");
+        //    The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements:
+        document.getElementById("Remo").innerHTML = cars.join("*")
+
+        // shift and unshift is use for remove and add the element from first position  
+        //and this mechanism based on Q opration means FIFO(first in first out)
+    </script>
+     </body>
+
+</html>

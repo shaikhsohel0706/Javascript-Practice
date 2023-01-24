@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array slice()
+    </title>
+</head>
+<body>
+    <h2>Slice Method</h2>
+<p>The slice() method slices out a piece of an array into a new array.</p>
+<p id="demo"></p>
+    <script>
+         const Fruits = ["Apple","Mango","Orange","Banana"]
+         const citrus = Fruits.slice(1);
+         document.getElementById("demo").innerHTML = Fruits +"<br><br>"+citrus;
+        // The slice() method creates a new array.
+        // The slice() method does not remove any elements from the source array
+     </script>
+     <p>When the slice() method is given two arguments, it selects array elements from the start argument, and up to (but not included) the end argument:</p>
+     <p id="Remo"></p>
+     <script>
+      const FRUITS = ["Apple","Mango","Orange","Banana"]
+      const Take = FRUITS.slice(1,3);
+      document.getElementById("Remo").innerHTML= FRUITS +"<br><br>"+Take;
+   
+     </script>
+</body>
+</html>
