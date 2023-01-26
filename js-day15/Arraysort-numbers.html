@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Number sorting</h1>
+    <p id="demo"></p>
+   <script>
+    const numArray=[ 4,6,8,1,28,7,100];
+    numArray.sort(function(a,b){
+        return a-b
+    })
+    // a-b is for showing numbers in accending order 
+    // b-a is for showing numbers in decending order 
+    document.getElementById("demo").innerHTML=numArray.join("|")   </script> 
+</body>
+</html>
