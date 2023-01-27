@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Example sorting Array of Object </h1>
+    <p id="demo"></p>
+    <script>
+        const cars =[
+            {type:"volvo",year:2010},
+            {type:"saab",year:2001},
+            {type:"Bmw",year:2016},
+        ];
+        cars.sort(function(a,b){
+            console.log("value of a",a);
+            console.log("value of a",b);
+            // sorting of array of obejects by using its property 
+            // for example cars , sorting by using year property of car 
+             return b.year-a.year
+        })
+        document.getElementById("demo").innerHTML=` cars <br> <br> 
+         car1 : ${cars[0].type}     year: ${cars[0].year} <br>
+         car2 : ${cars[1].type}     year: ${cars[1].year} <br>
+         car3 : ${cars[2].type}     year: ${cars[2].year} <br>`
+
+    </script>
+</body>
+</html>
