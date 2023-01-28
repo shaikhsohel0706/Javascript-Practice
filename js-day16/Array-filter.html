@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrayFilter</title>
+</head>
+<body>
+    <h1>filter function of an Array</h1>
+    <p id="demo1"> </p>
+    <p id="demo2"> </p>
+    <script>
+        const numbers = [4,45,16,25,9];
+     const over18 = numbers.filter(function(item){
+        return item > 18;
+     });
+     console.log("over18",over18);
+     document.getElementById("demo1").innerHTML= "Original Array::" +numbers.join("|");
+     document.getElementById("demo2").innerHTML= "Filtered over 18 numbers::"+over18.join
+     ("|");
+    </script>
+</body>
+</html>
