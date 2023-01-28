@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="sum"></p>
+    <script>
+        const numbers =  [4,45,16,25,9];
+        const sum = numbers.reduce(genratesum);
+        function genratesum(accumulater, value, index ,Arrray ){
+            return accumulater + value;
+        }
+      document.getElementById("demo").innerHTML=numbers
+      document.getElementById("sum").innerHTML=sum
+
+    </script>
+</body>
+</html>
