@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">                                                                                                                                                                              
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comparision in js</title>
+</head>
+<body>
+    <input id="ageId" type="number" placeholder="enter your age">
+    <button onclick="validate()">Vote!</button>
+    <p id="demo"></p>
+    <script>
+        const ageInputElement = document.getElementById("ageId");
+        const paragraphElement = document.getElementById("demo");
+        function validate(){
+            console.log("Value of input::",ageInputElement.value);
+            // block of code 
+            // if(Number(ageInputElement.value) > 18){
+            //     // if the condition is true then this block is execute
+            //     paragraphElement.innerHTML="Great you are eligible to Vote";
+
+            // }else{
+            //     paragraphElement.innerHTML="You are too young to Vote!"
+            // }
+            
+            paragraphElement.innerHTML= Number(ageInputElement.value)>18 ?"Great you are eligible to Vote": "You are too young to Vote!";
+        // this is a new way of writing a code in if elsee condition ,and is called as ternary oprater 
+        // syntax for ternary oprator
+        // variablename = (condition) ? value1:value2 
+
+        }
+    </script>
+</body>
+</html>
