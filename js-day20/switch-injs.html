@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch Statement</title>
+</head>
+<body>
+    <h3>switch statements in js </h3>
+    <p>Use the switch statement to select one of many code blocks to be executed. </p>
+    <p id="demo"></p>
+    <script>
+        const day= new Date().getDay();
+        console.log("the current day is:: ",day);
+        // let weekday
+        // switch(day){
+        //   case 0:  weekday="Sunday"
+        //   break;
+        //   case 1:  weekday="Monday"
+        //   break;
+        //   case 2: weekday="Tuesday"
+        //   break;
+        //   case 3:  weekday=" Wednesday"
+        //   break;
+        //   case 4:  weekday="Thursday"
+        //   break;
+        //   case 5:  weekday="Friday"
+        //   break;
+        //   case 6:  weekday="Saturday"
+        //   break;
+        // }
+        // document.getElementById("demo").innerHTML=`Today is ${weekday}`
+        let text 
+        switch(day){
+            case 0: text="sunday"
+            break;
+            case 6: text="saturday"
+            break;
+            default: text="looking forward for weekend "
+            document.getElementById("demo").innerHTML=` ${text}`
+        }
+    //  Sometimes you will want different switch cases to use the same code.
+    //     In this example case 4 and 5 share the same code block, and 0 and 6 share another code block:
+        // let txt 
+        // switch(day){
+        //     case 4:
+        //     case 5:
+        //   txt= "soon it will be weekend"
+        //   break;
+        //   case 0:
+        //     case 6:
+        //         txt= "it is weekend"  
+        //         break;
+        //         default:
+        //             txt="looking forward for a weekend"
+        //             break;
+        //             document.getElementById("demo").innerHTML=`${txt}`
+        // }
+    </script>
+</body>
+</html>
