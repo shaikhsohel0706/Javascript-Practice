@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> print square by using star</title>
+</head>
+<body>
+    <h2>print square by using star</h2>
+    <input type=" number" placeholder="Enter number here" id="inputId">
+    <button onclick="onClickPrintSquare()">click!</button>
+    <p id="demo"></p>
+    <script>
+        function onClickPrintSquare(){
+            const n=Number(document.getElementById("inputId").value)
+           let text=""
+           for(let i=0; i<n; i++){
+            for(let j=0; j<n; j++){
+                text+="*"
+            }
+            text+="<br>"
+           }
+           document.getElementById("demo").innerHTML=text
+        }
+    </script>
+</body>
+</html>
