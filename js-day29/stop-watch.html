@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+</head>
+<body>
+    <button onclick="onStartClicked()">Start</button>
+    <button onclick="onPauseClicked()">Pause</button>
+    <button onclick="onResetClicked()">Reset</button>
+    <p id="demo"></p>
+    <script>
+       let timerid;
+        let count=0;
+        const paraElement=document.getElementById("demo")
+        function onStartClicked(){
+           timerid= setInterval(() => {
+                paraElement.innerHTML=count++
+            }, 1000);
+        }
+        function onPauseClicked(){
+            clearInterval(timerid);
+         }
+         function onResetClicked(){
+            paraElement.innerHTML="";
+            count=0;
+            clearInterval(timerid);
+         }
+    </script>
+</body>
+</html>
