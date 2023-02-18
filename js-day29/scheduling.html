@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scheduling</title>
+</head>
+
+<body>
+    <button onclick="handleAfterOnClick()">Display text after 5 sec</button>
+    <button onclick="handleEveryOnClick()">Display text after 2 sec</button>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        function handleAfterOnClick() {
+            setTimeout(() => {
+                console.log("afterr 15 sec");
+                document.getElementById('demo1').innerHTML = "I am printed after 5 sec"
+            }, 15000);
+        }
+        let timerid;
+        function handleEveryOnClick() {
+            let count = 0;
+            clearInterval(timerid)
+            timerid = setInterval(() => {
+        document.getElementById("demo2").innerHTML = count++
+
+            }, 1000);
+            setTimeout(() => {
+                clearInterval(timerid);
+            }, 10000);
+        }  
+    </script>
+</body>
+
+</html>
